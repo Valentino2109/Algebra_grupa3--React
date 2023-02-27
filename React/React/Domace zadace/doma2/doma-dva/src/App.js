@@ -1,22 +1,14 @@
-import FuncOne from "./components/FuncOne";
-import FuncTwo from "./components/FuncTwo";
-import FuncThree from "./components/FuncThree";
-import ClassOne from "./components/ClassOne";
+import PopisOsoba from "./z1/PopisOsoba";
 import "./style.css";
 
-// List of 10 objects which contains name, surname and age
+const osobe = [
+  { ime: `Pero`, prezime: `Peric`, godine: 45 },
+  { ime: `Maja`, prezime: `Majic`, godine: 21 },
+];
 
 function App() {
-  return (
-    <div id="div__main">
-      <FuncOne />
-      <FuncTwo />
-      <FuncThree />
-      <ClassOne />
-    </div>
-  );
+  return <div id="div__main">{<PopisOsoba popis={osobe} />}</div>;
 }
-
 export default App;
 
 /*
