@@ -1,5 +1,5 @@
 export default function MyList() {
-  const numbers = [34, 12, 65, 34, 77];
+  const numbers = [34, 12, 65, 56, 77];
 
   return (
     <ul>
